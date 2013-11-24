@@ -118,7 +118,7 @@ theme.menu_width                = 130
 theme.menu_border_width         = 2
 theme.border_width              = 1
 theme.border_color              = theme.fg_normal
-theme.wallpaper = "/home/lepagee/bg/final/bin_ascii_ds.png"
+-- theme.wallpaper = "path_to_wallpaper"
 
 
 ------------------------------------------------------------------------------------------------------
@@ -200,4 +200,3 @@ theme.layout_spiraldwindle_s = path .."Icon/layouts_small/spiral_d.png"
 
 
 return theme
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:encoding=utf-8:textwidth=80

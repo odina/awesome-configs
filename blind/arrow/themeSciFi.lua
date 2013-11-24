@@ -137,7 +137,7 @@ theme.menu_bg_normal            = themeutils.pattern(path .."Icon/bg/menu_bg_sci
 theme.menu_bg_highlight         = themeutils.pattern(path .."Icon/bg/menu_bg_highlight.png"   )
 theme.bg_dock                   = themeutils.pattern(path .."Icon/bg/bg_dock.png"             )
 
-theme.wallpaper = "/home/lepagee/bg/final/bin_ascii_ds.png"
+-- theme.wallpaper = "path_to_wallpaper"
 theme.draw_underlay = themeutils.draw_underlay
 
 
@@ -245,7 +245,7 @@ wibox_w.textbox.draw = function(self,w, cr, width, height,args)
     local ink, logical = self._layout:get_pixel_extents()
 
     --Draw in the cache
-    local img  = cairo.ImageSurface.create(cairo.Format.ARGB32, width, height)--target:create_similar(target:get_content(),width,height) 
+    local img  = cairo.ImageSurface.create(cairo.Format.ARGB32, width, height)--target:create_similar(target:get_content(),width,height)
     local cr2 = cairo.Context(img)
 --     cr2:set_operator(cairo.Operator.CLEAR)
 --     cr2:paint()
@@ -261,4 +261,3 @@ wibox_w.textbox.draw = function(self,w, cr, width, height,args)
 end
 
 return theme
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:encoding=utf-8:textwidth=80

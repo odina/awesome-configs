@@ -153,8 +153,8 @@ local function new(screen, args)
 
   local right_layout = wibox.layout.fixed.horizontal()
 
-  right_layout:add(mytextclock)
   right_layout:add(ib2)
+  right_layout:add(mytextclock)
 
   right_layout:buttons (util.table.join(button({ }, 1, function (geo)
       if not mainMenu then
@@ -166,7 +166,7 @@ local function new(screen, args)
       mainMenu.parent_geometry = geo
       mainMenu.visible = not mainMenu.visible
   end)))
-  
+
   return right_layout
 end
 

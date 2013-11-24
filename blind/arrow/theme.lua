@@ -22,8 +22,8 @@ arrow.task.theme,arrow.tag.theme = theme,theme
 --                                                                                                  --
 ------------------------------------------------------------------------------------------------------
 
-theme.default_height = 24
-theme.font           = "terminus mono 13"
+theme.default_height = 16
+theme.font           = "snap"
 theme.path           = path
 
 theme.bg_normal      = "#0A1535"
@@ -39,11 +39,6 @@ theme.fg_urgent      = "#FF7777"
 theme.fg_minimize    = "#1577D3"
 
 theme.bg_systray     = theme.fg_normal
-
---theme.border_width  = "1"
---theme.border_normal = "#555555"
---theme.border_focus  = "#535d6c"
---theme.border_marked = "#91231c"
 
 theme.border_width   = "0"
 theme.border_width2  = "2"
@@ -120,7 +115,7 @@ theme.menu_width                = 130
 theme.menu_border_width         = 2
 theme.border_width              = 1
 theme.border_color              = theme.fg_normal
-theme.wallpaper = "/home/lepagee/bg/final/bin_ascii_ds.png"
+theme.wallpaper                 = "/home/dindee/Pictures/bg.jpg"
 
 theme.dock_icon_color = { type = "linear", from = { 0, 0 }, to = { 0, 55 }, stops = { { 0, "#1889F2" }, { 1, "#083158" }}}
 
@@ -168,7 +163,7 @@ theme.titlebar_tag    = path .."Icon/titlebar/tag.png"
 theme.titlebar_bg_focus = theme.bg_normal
 
 theme.titlebar_title_align = "left"
-theme.titlebar_height = 24
+theme.titlebar_height = 16
 
 
 ------------------------------------------------------------------------------------------------------
@@ -206,4 +201,3 @@ theme.layout_spiraldwindle_s = path .."Icon/layouts_small/spiral_d.png"
 
 
 return theme
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:encoding=utf-8:textwidth=80

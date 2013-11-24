@@ -34,31 +34,18 @@ end
 --Load tags, this cannot be undone
 local function load_tags(tyrannical_tags)
     for k,v in ipairs(tyrannical_tags) do
-        if v.init ~= false then
-            local stype = type(v.screen)
-            if stype == "table" then
-                local screens = v.screen
-                for k2,v2 in pairs(screens) do
-                    if v2 <= capi.screen.count() then
-                        v.screen = v2
-                        awful.tag.add(v.name,v)
-                    end
-                end
-                v.screen = screens
-            elseif (v.screen or 1) <= capi.screen.count() then
-                awful.tag.add(v.name,v)
+        local stype = type(v.screen)
+
+        if stype == "table" then
+            local screens = v.screen
+            for k2,v2 in pairs(screens) do
+              v.screen = v2
+              awful.tag.add(v.name,v)
             end
-        elseif v.volatile == nil then
-            v.volatile = true
+            v.screen = screens
         end
-        if v.class and class_client then
-            for i=1,#v.class do
-                local low = string.lower(v.class[i])
-                local tmp = class_client[low] or {tags={},properties={}}
-                tmp.tags[#tmp.tags+1] = v
-                class_client[low] = tmp
-            end
-        end
+        awful.tag.add(v.name,v)
+
         tags_hash[v.name or "N/A"] = v
     end
 end
