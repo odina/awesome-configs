@@ -67,7 +67,7 @@ config.scriptPath    = awful.util.getdir("config") .. "/Scripts/"
 config.load()
 config.themePath = awful.util.getdir("config") .. "/blind/" .. config.themeName .. "/"
 config.iconPath  = config.themePath.. "Icon/"
-beautiful.init(config.themePath .. "/theme.lua")
+beautiful.init(config.themePath .. "/themeG.lua")
 
 
 if beautiful.wallpaper then
@@ -99,7 +99,7 @@ local endArrow_alt   = blind.common.drawing.get_beg_arrow_wdg2({bg_color=beautif
 local endArrow_alt2  = wibox.widget.imagebox()
 local endArrow_alt2i = cairo.ImageSurface(cairo.Format.ARGB32, beautiful.default_height/2+2, beautiful.default_height)
 local launcher       = customMenu.launcher(200)
-local launchDock     = widgets.dock(nil)
+-- local launchDock     = widgets.dock(nil)
 local netinfo        = drawer.netInfo(300)
 local placesMenu     = customMenu.places(100)
 
