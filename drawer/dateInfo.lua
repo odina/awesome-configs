@@ -125,15 +125,15 @@ local function createDrawer()
 
   vicious.register(timeInfo,  testFunc, '$1',1)
 
-  mainMenu:add_widget(radical.widgets.header(mainMenu, "CALANDAR"     ),{height = 20 , width = 200})
+  mainMenu:add_widget(radical.widgets.header(mainMenu, "CALENDAR"     ),{height = 20 , width = 200})
   mainMenu:add_widget(calInfo)
-  mainMenu:add_widget(radical.widgets.header(mainMenu, "INTERNATIONAL"),{height = 20 , width = 200})
-  mainMenu:add_widget(timeInfo)
-  mainMenu:add_widget(radical.widgets.header(mainMenu, "SATELLITE"    ),{height = 20 , width = 200})
-  mainMenu:add_widget(testImage2)
-  mainMenu:add_widget(testImage3)
-  mainMenu:add_widget(spacer96)
-  mainMenu:add_widget(radical.widgets.header(mainMenu, "FORCAST"      ),{height = 20 , width = 200})
+  -- mainMenu:add_widget(radical.widgets.header(mainMenu, "INTERNATIONAL"),{height = 20 , width = 200})
+  -- mainMenu:add_widget(timeInfo)
+  -- mainMenu:add_widget(radical.widgets.header(mainMenu, "SATELLITE"    ),{height = 20 , width = 200})
+  -- mainMenu:add_widget(testImage2)
+  -- mainMenu:add_widget(testImage3)
+  -- mainMenu:add_widget(spacer96)
+  -- mainMenu:add_widget(radical.widgets.header(mainMenu, "FORCAST"      ),{height = 20 , width = 200})
   return calInfo:fit(9999,9999)
 end
 

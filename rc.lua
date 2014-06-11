@@ -67,7 +67,7 @@ config.scriptPath    = awful.util.getdir("config") .. "/Scripts/"
 config.load()
 config.themePath = awful.util.getdir("config") .. "/blind/" .. config.themeName .. "/"
 config.iconPath  = config.themePath.. "Icon/"
-beautiful.init(config.themePath .. "/themeG.lua")
+beautiful.init(config.themePath .. "/theme.lua")
 
 
 if beautiful.wallpaper then
